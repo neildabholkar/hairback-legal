@@ -43,8 +43,14 @@
         <li>Comply with legal obligations</li>
     </ul>
 
-    <h2>3. AI and Photo Processing</h2>
-    <p>Photos you submit for hair analysis are sent to secure cloud services for AI processing. Processing is used solely to analyze hair density and generate your personalized insights. We do not use your photos for advertising, training unrelated models, or sharing with third parties for marketing.</p>
+    <h2>3. AI Photo Processing and Face Data</h2>
+    <p>When you submit photos for hair analysis, the photos are sent over HTTPS to the following third-party AI services:</p>
+    <ul>
+        <li><strong>Hugging Face (huggingface.co)</strong> — performs pixel-level hair and skin segmentation. Your photos are transmitted for analysis only and are NOT stored or retained by Hugging Face after the API response is returned.</li>
+        <li><strong>Google Gemini API (Google LLC)</strong> — performs clinical-style hair density analysis on a composite image. Your photos are transmitted for analysis only and are NOT stored or retained by Google beyond the duration of the API call.</li>
+    </ul>
+    <p><strong>Face data:</strong> Your photos may incidentally contain your face. We do not collect, store, or use face data for any purpose other than hair analysis. We do not use face data for advertising, facial recognition, or any purpose unrelated to the App's core function. Photos are not retained on our servers after analysis is complete. All scan results and progress history are stored locally on your device only.</p>
+    <p>We ask for your explicit consent before sending any photos to these services. You may decline at any time, which will prevent AI analysis from running.</p>
 
     <h2>4. Data Storage and Retention</h2>
     <p>Routine data, progress history, and preferences are stored locally on your device. Processed analysis results may be stored to support your progress history. Photos sent for analysis are processed and not retained longer than necessary to deliver results, unless you have opted into features that require retention. We retain your data only as long as needed to provide the App and meet legal requirements.</p>
